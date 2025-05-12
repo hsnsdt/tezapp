@@ -1,93 +1,129 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Mobil Uygulama Geliştirici</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TEZ APP - Mobil Uygulamalar</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    body {
+    * {
+      box-sizing: border-box;
       margin: 0;
-      font-family: 'Roboto', sans-serif;
-      background: linear-gradient(to right, #00b4db, #0083b0);
+      padding: 0;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #7f00ff, #e100ff);
       color: #fff;
+      padding: 20px;
     }
     header {
       text-align: center;
-      padding: 50px 20px;
+      margin-bottom: 40px;
+      animation: fadeIn 1s ease;
     }
     header h1 {
-      font-size: 2.5rem;
+      font-size: 2.8rem;
       margin-bottom: 10px;
     }
     header p {
-      font-size: 1.2rem;
+      font-size: 1.1rem;
+      opacity: 0.9;
     }
-    .apps {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 40px 20px;
+    .app-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
     }
     .app-card {
-      background: rgba(255, 255, 255, 0.1);
-      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.1);
       border-radius: 15px;
-      margin: 15px 0;
-      max-width: 500px;
-      width: 100%;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-      transition: transform 0.3s ease;
+      padding: 20px;
+      backdrop-filter: blur(5px);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+      transition: transform 0.3s;
+      animation: slideUp 1s ease forwards;
     }
     .app-card:hover {
       transform: translateY(-5px);
     }
     .app-card h2 {
-      margin-top: 0;
+      font-size: 1.5rem;
+      margin-bottom: 10px;
     }
     .app-card p {
       font-size: 0.95rem;
+      opacity: 0.85;
     }
     .app-card a {
       display: inline-block;
-      margin-top: 10px;
-      background: #fff;
-      color: #0083b0;
+      margin-top: 15px;
       padding: 10px 15px;
+      background-color: #fff;
+      color: #7f00ff;
       text-decoration: none;
       border-radius: 8px;
       font-weight: bold;
+      transition: background 0.3s;
+    }
+    .app-card a:hover {
+      background-color: #f1f1f1;
     }
     footer {
+      margin-top: 40px;
       text-align: center;
-      padding: 20px;
       font-size: 0.9rem;
-      background-color: rgba(0,0,0,0.1);
+      opacity: 0.8;
+    }
+    .developer-link {
+      margin-top: 10px;
+      display: inline-block;
+      color: #fff;
+      font-weight: bold;
+      text-decoration: underline;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
     }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>Merhaba, ben Ahmet 👋</h1>
-    <p>Android & iOS için modern uygulamalar geliştiriyorum.</p>
+    <h1>TEZ APP 🚀</h1>
+    <p>Geleceğin mobil uygulamalarını geliştiriyoruz</p>
+    <a href="https://play.google.com/store/apps/developer?id=TEZ+APP" target="_blank" class="developer-link">
+      Google Play Profilimizi Gör
+    </a>
   </header>
 
-  <section class="apps">
+  <section class="app-grid">
     <div class="app-card">
       <h2>Yüzde Hesaplama</h2>
-      <p>Basit, hızlı ve reklamsız yüzde hesaplama uygulaması.</p>
+      <p>Basit ve hızlı bir yüzde hesaplama aracı. Karanlık mod ve geçmiş özelliğiyle birlikte.</p>
       <a href="#">Google Play'de Aç</a>
     </div>
     <div class="app-card">
       <h2>Online Takip Asistanı</h2>
-      <p>WhatsApp çevrim içi takibi yapabileceğiniz akıllı uygulama.</p>
-      <a href="#">Detayları Gör</a>
+      <p>Ailenizin çevrim içi durumunu kolayca takip edin. Akıllı bildirimlerle anlık güncelleme alın.</p>
+      <a href="#">Google Play'de Aç</a>
+    </div>
+    <div class="app-card">
+      <h2>Gizli Uygulama Kasası</h2>
+      <p>Özel dosyalarınızı ve uygulamalarınızı gizlemek için güçlü bir çözüm.</p>
+      <a href="#">Google Play'de Aç</a>
     </div>
   </section>
 
   <footer>
-    &copy; 2025 Ahmet Geliştirici - Tüm Hakları Saklıdır.
+    &copy; 2025 TEZ APP - Tüm Hakları Saklıdır.
   </footer>
 
 </body>
