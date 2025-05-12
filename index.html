@@ -1,130 +1,212 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="tr">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>TEZ APP - Mobil Uygulamalar</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-    body {
-      font-family: 'Poppins', sans-serif;
-      background: linear-gradient(to right, #7f00ff, #e100ff);
-      color: #fff;
-      padding: 20px;
-    }
-    header {
-      text-align: center;
-      margin-bottom: 40px;
-      animation: fadeIn 1s ease;
-    }
-    header h1 {
-      font-size: 2.8rem;
-      margin-bottom: 10px;
-    }
-    header p {
-      font-size: 1.1rem;
-      opacity: 0.9;
-    }
-    .app-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 20px;
-    }
-    .app-card {
-      background-color: rgba(255, 255, 255, 0.1);
-      border-radius: 15px;
-      padding: 20px;
-      backdrop-filter: blur(5px);
-      box-shadow: 0 6px 20px rgba(0,0,0,0.2);
-      transition: transform 0.3s;
-      animation: slideUp 1s ease forwards;
-    }
-    .app-card:hover {
-      transform: translateY(-5px);
-    }
-    .app-card h2 {
-      font-size: 1.5rem;
-      margin-bottom: 10px;
-    }
-    .app-card p {
-      font-size: 0.95rem;
-      opacity: 0.85;
-    }
-    .app-card a {
-      display: inline-block;
-      margin-top: 15px;
-      padding: 10px 15px;
-      background-color: #fff;
-      color: #7f00ff;
-      text-decoration: none;
-      border-radius: 8px;
-      font-weight: bold;
-      transition: background 0.3s;
-    }
-    .app-card a:hover {
-      background-color: #f1f1f1;
-    }
-    footer {
-      margin-top: 40px;
-      text-align: center;
-      font-size: 0.9rem;
-      opacity: 0.8;
-    }
-    .developer-link {
-      margin-top: 10px;
-      display: inline-block;
-      color: #fff;
-      font-weight: bold;
-      text-decoration: underline;
-    }
-
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(-20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    @keyframes slideUp {
-      from { opacity: 0; transform: translateY(40px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TEZ APP - Ana Sayfa</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
+  <nav>
+    <div class="logo">TEZ APP</div>
+    <ul>
+      <li><a href="index.html">Ana Sayfa</a></li>
+      <li><a href="about.html">Hakkımızda</a></li>
+      <li><a href="privacy.html">Gizlilik</a></li>
+    </ul>
+  </nav>
 
-  <header>
-    <h1>TEZ APP 🚀</h1>
-    <p>Geleceğin mobil uygulamalarını geliştiriyoruz</p>
-    <a href="https://play.google.com/store/apps/developer?id=TEZ+APP" target="_blank" class="developer-link">
-      Google Play Profilimizi Gör
-    </a>
+  <header class="hero">
+    <h1>Mobil Teknolojinin Kalbinde</h1>
+    <p>Kullanıcı dostu, hızlı ve güvenilir mobil uygulamalar geliştiriyoruz.</p>
+    <a href="https://play.google.com/store/apps/developer?id=TEZ+APP" target="_blank" class="button">Google Play Profilimiz</a>
   </header>
 
-  <section class="app-grid">
-    <div class="app-card">
-      <h2>Yüzde Hesaplama</h2>
-      <p>Basit ve hızlı bir yüzde hesaplama aracı. Karanlık mod ve geçmiş özelliğiyle birlikte.</p>
-      <a href="#">Google Play'de Aç</a>
-    </div>
-    <div class="app-card">
-      <h2>Online Takip Asistanı</h2>
-      <p>Ailenizin çevrim içi durumunu kolayca takip edin. Akıllı bildirimlerle anlık güncelleme alın.</p>
-      <a href="#">Google Play'de Aç</a>
-    </div>
-    <div class="app-card">
-      <h2>Gizli Uygulama Kasası</h2>
-      <p>Özel dosyalarınızı ve uygulamalarınızı gizlemek için güçlü bir çözüm.</p>
-      <a href="#">Google Play'de Aç</a>
+  <section class="apps">
+    <h2>Uygulamalarımız</h2>
+    <div class="card-grid">
+      <div class="card">
+        <h3>Yüzde Hesaplama</h3>
+        <p>Kullanımı kolay yüzde hesaplama aracı. Modern arayüz ve geçmiş desteğiyle.</p>
+        <a href="#">İncele</a>
+      </div>
+      <div class="card">
+        <h3>Takip Asistanı</h3>
+        <p>Ailenizin çevrim içi durumunu kolayca izleyin. Bildirim sistemiyle entegre.</p>
+        <a href="#">İncele</a>
+      </div>
     </div>
   </section>
 
   <footer>
-    &copy; 2025 TEZ APP - Tüm Hakları Saklıdır.
+    <p>&copy; 2025 TEZ APP</p>
+    <div class="social-icons">
+      <a href="#"><img src="assets/icons/instagram.svg" alt="Instagram"></a>
+      <a href="#"><img src="assets/icons/x.svg" alt="X"></a>
+      <a href="#"><img src="assets/icons/youtube.svg" alt="YouTube"></a>
+    </div>
   </footer>
-
 </body>
 </html>
+
+<!-- about.html -->
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hakkımızda - TEZ APP</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav>
+    <div class="logo">TEZ APP</div>
+    <ul>
+      <li><a href="index.html">Ana Sayfa</a></li>
+      <li><a href="about.html">Hakkımızda</a></li>
+      <li><a href="privacy.html">Gizlilik</a></li>
+    </ul>
+  </nav>
+  <main class="apps">
+    <h2>Hakkımızda</h2>
+    <p>TEZ APP olarak mobil dünyada fark yaratan uygulamalar geliştiriyoruz. Amacımız, kullanıcıların günlük ihtiyaçlarına hızlı ve pratik çözümler sunmak.</p>
+  </main>
+  <footer>
+    <p>&copy; 2025 TEZ APP</p>
+    <div class="social-icons">
+      <a href="#"><img src="assets/icons/instagram.svg" alt="Instagram"></a>
+      <a href="#"><img src="assets/icons/x.svg" alt="X"></a>
+      <a href="#"><img src="assets/icons/youtube.svg" alt="YouTube"></a>
+    </div>
+  </footer>
+</body>
+</html>
+
+<!-- privacy.html -->
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gizlilik Politikası - TEZ APP</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav>
+    <div class="logo">TEZ APP</div>
+    <ul>
+      <li><a href="index.html">Ana Sayfa</a></li>
+      <li><a href="about.html">Hakkımızda</a></li>
+      <li><a href="privacy.html">Gizlilik</a></li>
+    </ul>
+  </nav>
+  <main class="apps">
+    <h2>Gizlilik Politikası</h2>
+    <p>TEZ APP olarak kullanıcı gizliliğine önem veriyoruz. Uygulamalarımız kullanıcı verilerini yalnızca hizmeti sağlamak amacıyla işler ve asla üçüncü taraflarla paylaşmaz.</p>
+  </main>
+  <footer>
+    <p>&copy; 2025 TEZ APP</p>
+    <div class="social-icons">
+      <a href="#"><img src="assets/icons/instagram.svg" alt="Instagram"></a>
+      <a href="#"><img src="assets/icons/x.svg" alt="X"></a>
+      <a href="#"><img src="assets/icons/youtube.svg" alt="YouTube"></a>
+    </div>
+  </footer>
+</body>
+</html>
+
+<!-- style.css (aynı kalıyor) -->
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #f8f9fa;
+  color: #333;
+}
+
+nav {
+  background: #e4d7f5;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  align-items: center;
+}
+nav .logo {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.hero {
+  text-align: center;
+  padding: 4rem 1rem;
+  background: linear-gradient(135deg, #e4d7f5, #d9f2f9);
+}
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.hero p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+.button {
+  background: #a07cc4;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.apps {
+  padding: 3rem 2rem;
+  text-align: center;
+}
+.card-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  margin-top: 2rem;
+}
+.card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.card h3 {
+  margin-top: 0;
+}
+.card a {
+  display: inline-block;
+  margin-top: 1rem;
+  color: #6c63ff;
+  text-decoration: none;
+}
+
+footer {
+  padding: 2rem;
+  text-align: center;
+  background: #e4d7f5;
+  margin-top: 3rem;
+}
+.social-icons img {
+  width: 24px;
+  margin: 0 0.5rem;
+  vertical-align: middle;
+}
+
+/* Diğer sayfalar (about.html, privacy.html) aynı navbar/footer yapısını kullanacak */
