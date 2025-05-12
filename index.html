@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mobil Uygulama Geliştirici</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(to right, #00b4db, #0083b0);
+      color: #fff;
+    }
+    header {
+      text-align: center;
+      padding: 50px 20px;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.2rem;
+    }
+    .apps {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 20px;
+    }
+    .app-card {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 20px;
+      border-radius: 15px;
+      margin: 15px 0;
+      max-width: 500px;
+      width: 100%;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+    }
+    .app-card:hover {
+      transform: translateY(-5px);
+    }
+    .app-card h2 {
+      margin-top: 0;
+    }
+    .app-card p {
+      font-size: 0.95rem;
+    }
+    .app-card a {
+      display: inline-block;
+      margin-top: 10px;
+      background: #fff;
+      color: #0083b0;
+      padding: 10px 15px;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      background-color: rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Merhaba, ben Ahmet 👋</h1>
+    <p>Android & iOS için modern uygulamalar geliştiriyorum.</p>
+  </header>
+
+  <section class="apps">
+    <div class="app-card">
+      <h2>Yüzde Hesaplama</h2>
+      <p>Basit, hızlı ve reklamsız yüzde hesaplama uygulaması.</p>
+      <a href="#">Google Play'de Aç</a>
+    </div>
+    <div class="app-card">
+      <h2>Online Takip Asistanı</h2>
+      <p>WhatsApp çevrim içi takibi yapabileceğiniz akıllı uygulama.</p>
+      <a href="#">Detayları Gör</a>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Ahmet Geliştirici - Tüm Hakları Saklıdır.
+  </footer>
+
+</body>
+</html>
